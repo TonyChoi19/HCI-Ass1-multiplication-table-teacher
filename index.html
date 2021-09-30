@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multiplication Table Teacher-Verion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <h1>Multiplication Table Teacher-Version</h1>
+
+
+  <script class="table">
+    document.write("<table border='1px'>");
+
+    document.write("<tr style='font-size:32px;color:#fff;background-color:#000;'>");
+
+    for (a = 1; a <= 10; a++) {
+      document.write("<th>" + a + "</th>");
+    }
+
+    document.write("</tr>");
+
+    for (j = 1; j <= 10; j++) {
+      document.write("<tr>");
+
+      for (k = 1; k <= 10; k++) {
+        if (k % 2 === 1) {
+          document.write("<td style='font-size:21px; background-color:#FEFBF3;'>" + k + " x " + j + " = " + k * j + "</td>")
+        } else {
+          document.write("<td style='font-size:21px; background-color:#FFADAD;'>" + k + " x " + j + " = " + k * j + "</td>")
+        }
+      }
+      document.write("</tr>");
+    }
+
+    document.write("</table>");
+  </script>
+
+  <hr>
+
+  <div class="inplementation">
+    <div class="repeated_addition">
+      <h2>Idea: Multiplying by Repeated Addition</h2>
+      <h2><span style="color: #FF2626">2</span> x <span style="color: #D62AD0">3</span></h2>
+      <h2>= <span style="color: #FF2626">2</span> + <span style="color: #FF2626">2</span> + <span style="color: #FF2626">2</span></h2>
+      <h2>= <span style="color: #D62AD0">3</span> + <span style="color: #D62AD0">3</span></h2>
+    </div>
+
+    <hr>
+
+    <h2>Implementations / Calculations</h2>
+
+    <div class="wrap">
+      <div class="implementations">
+        <img src="implementation1.jpg" alt="implementation1" width="350" height="400" class="pictures pic1">
+        <img src="implementation2.jpg" alt="implementation2" width="350" height="400" class="pictures pic2">
+        <img src="implementation3.jpg" alt="implementation3" width="350" height="400" class="pictures pic3">
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
